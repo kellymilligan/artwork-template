@@ -15,6 +15,11 @@ If streaming exports to GIF/MP4, install [ffmpeg](https://www.ffmpeg.org/), e.g.
 sudo apt install ffmpeg
 ```
 
+Install other optional dependencies (e.g. `canvas-sketch-util`)
+```
+npm install
+```
+
 
 ---
 
