@@ -48,3 +48,10 @@ Open `localhost:9966` in the browser
 ### 3. Iteration
 Use `canvas-sketch`'s git hashing feature to iterate on artwork:
 `Ctrl` + `K` performs a `git add` and `git commit`, so that previous iterations can easily be accessed and re-run via their SHA
+
+
+--- 
+
+## Notes
+
+- When using node to render, 2774.314mm @ 300dpi appears to be the absolute maximum size on either axis, even if non-square.
