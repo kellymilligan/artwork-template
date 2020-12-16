@@ -1,10 +1,13 @@
 {
-  "name": "artwork-2020-01",
+  "name": "artwork-template",
   "version": "1.0.0",
-  "description": "Artwork progression for 'Beluga'",
+  "description": "GitHub template for creating artwork using canvas-sketch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sketch": "canvas-sketch input/artwork.js --output=./output",
+    "sketch-to-png": "npm run sketch",
+    "sketch-to-gif": "canvas-sketch input/artwork.js --output=./output --stream [ gif --scale=512:-1 ]",
+    "sketch-to-mp4": "canvas-sketch input/artwork.js --output=./output --stream [ mp4 --scale=1280:-1 ]"
   },
   "repository": {
     "type": "git",

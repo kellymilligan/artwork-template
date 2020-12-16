@@ -31,18 +31,30 @@ npm install
 ### 1a. Basic:
 
 ```
+npm run sketch-to-png
+```
+
+Exports to a png still on save. An alias for:
+
+```
 canvas-sketch input/artwork.js --output=./output
 ```
 
-Use the `--output` flag to ensure file structure continuity between projects
+Uses the `--output` flag to ensure file structure continuity between artworks
 
-### 1b. With GIF export:
+### 1b. With GIF/MP4 export:
+
+```
+npm run sketch-to-gif
+or
+npm run sketch-to-mp4
+```
+
+Enables the ability to export to streamed GIF (512px) or MP4 (1280px) files using `Ctrl` + `Shift` + `S`. An alias for:
 
 ```
 canvas-sketch input/artwork.js --output=./output --stream [ gif --scale=512:-1 ]
 ```
-
-Enables the ability to export to GIF files at 512px wide using `Ctrl` + `Shift` + `S`
 
 Additional CLI config options can be found in the [canvas-sketch CLI Docs](https://github.com/mattdesl/canvas-sketch/blob/master/docs/cli.md)
 
@@ -59,4 +71,4 @@ Use `canvas-sketch`'s git hashing feature to iterate on artwork:
 
 ## Notes
 
-- When using node to render, 2774.314mm @ 300dpi appears to be the absolute maximum size on either axis, even if non-square.
+- When using node to render canvas2d graphics, 2774.314mm @ 300dpi appears to be the absolute maximum size on either axis, even if non-square.
